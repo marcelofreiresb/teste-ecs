@@ -1,0 +1,24 @@
+{
+    "executionRoleArn": "arn:aws:iam::484941465042:role/ecs-tg-role-storyblok-test",
+    "containerDefinitions": [
+        {
+            "name": "sample-website",
+            "image": "nginx",
+            "essential": true,
+            "portMappings": [
+                {
+                    "hostPort": 80,
+                    "protocol": "tcp",
+                    "containerPort": 80
+                }
+            ]
+        }
+    ],
+    "requiresCompatibilities": [
+        "EC2"
+    ],
+    "networkMode": "null",
+    "cpu": "256",
+    "memory": "512",
+    "family": "test"
+}taskdef.json
