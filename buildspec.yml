@@ -13,7 +13,7 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Building the Docker image...
-      - docker build -t ecs-poc:latest .
+      - docker build -t 484941465042.dkr.ecr.us-east-1.amazonaws.com/ecs-poc .
       - docker tag ecs-poc:latest ecs-poc:$4
   post_build:
     commands:
