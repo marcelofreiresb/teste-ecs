@@ -10,7 +10,7 @@ phases:
       - ls -la
       - echo Build started on `date`
       - echo Building the Docker image...
-      - docker build -t ./teste:latest .
+      - docker build -t poc teste:latest .
 
 artifacts:
     files:
