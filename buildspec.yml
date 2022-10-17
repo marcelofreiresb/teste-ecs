@@ -9,7 +9,6 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Building the Docker image...
-      - docker build -t teste:latest .
 
 artifacts:
     files:
