@@ -1,6 +1,6 @@
 [
     {
       "name": "teste",
-      "imageUri": "ecs-poc:latest 484941465042.dkr.ecr.us-east-1.amazonaws.com/ecs-poc:latest"
+      "imageUri": "484941465042.dkr.ecr.us-east-1.amazonaws.com/ecs-poc:latest"
     }
   ]
