@@ -1,6 +1,6 @@
 [
     {
       "name": "teste",
-      "imageUri": "nginx:lastest"
+      "imageUri": "ecs-poc:latest 484941465042.dkr.ecr.us-east-1.amazonaws.com/ecs-poc:latest"
     }
   ]
