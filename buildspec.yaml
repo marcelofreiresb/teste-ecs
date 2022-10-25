@@ -30,6 +30,6 @@ phases:
 artifacts:
   files: 
     - 'imagedefinitions.json'
-    - 'appsec.yaml'
+    - 'appspec.yaml'
     - 'taskdef.json'
 
