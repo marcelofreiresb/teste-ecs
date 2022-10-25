@@ -3,8 +3,7 @@ Resources:
   - TargetService:
       Type: AWS::ECS::Service
       Properties:
-        TaskDefinition: "arn:aws:ecs:region:aws_account_id:task-definition/first-run-task-definition:7"
+        TaskDefinition: "arn:aws:ecs:eu-central-1:484941465042:task-definition/teste-ecs-poc:1"
         LoadBalancerInfo:
-          ContainerName: "sample-app"
+          ContainerName: "teste-poc"
           ContainerPort: 80
-        PlatformVersion: "LATEST"
