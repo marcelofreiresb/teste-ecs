@@ -1,8 +1,8 @@
 {
-    "executionRoleArn": "arn:aws:ecs:eu-central-1:484941465042:task-definition/teste-ecs-poc:1",
+    "executionRoleArn": "arn:aws:ecs:eu-central-1:484941465042:task-definition/teste-ecs-poc:4",
     "containerDefinitions": [
         {
-            "name": "sample-website",
+            "name": "tutorial-task-def",
             "image": "<IMAGE1_NAME>",
             "essential": true,
             "portMappings": [
@@ -15,7 +15,7 @@
         }
     ],
     "requiresCompatibilities": [
-        "EC2"
+        "FARGATE"
     ],
     "networkMode": "null",
     "cpu": "256",
