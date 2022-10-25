@@ -23,7 +23,8 @@ phases:
       - echo Writing image definitions file...
       - printf '[{"name":"teste-ecs","imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
       - cat imagedefinitions.json
-      - ls -la
+      - cat taskdef.json
+      - cat appsec.yaml
       - echo Build completed on `date`
         
 artifacts:
