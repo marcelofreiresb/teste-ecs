@@ -1,15 +1,4 @@
 version: 0.2
-
-phases:
-  pre_build:
-    commands:
-      - apt update -y
-      - apt-get install -y nodejs  
-      - echo Logging in to Amazon ECR...
-      - $(aws ecr get-login --region $AWS_DEFAULT_REGION --no-include-email)
-      - REPOSITORY_URI=${repository_url}
-      - IMAGE_TAG=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-7)
-  build:
     commands:
       - echo Build started on `date`
       - echo Building the Docker image...
@@ -25,11 +14,11 @@ phases:
       - cat imagedefinitions.json
       - cat taskdef.json
       - ls -la
-      - cat appsec.yaml
+      - cat appspec.yaml
       - echo Build completed on `date`
         
 artifacts:
   files: 
     - 'imagedefinitions.json'
-    - 'appsec.yaml'
+    - 'appspec.yaml'
     - 'taskdef.json'
