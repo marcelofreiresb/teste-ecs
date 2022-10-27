@@ -17,8 +17,17 @@ version: 0.2
       - cat appspec.yaml
       - echo Build completed on `date`
         
+        
 artifacts:
   files: 
     - 'imagedefinitions.json'
     - 'appspec.yaml'
     - 'taskdef.json'
+  secondary-artifacts:
+    DefinitionArtifact:
+      files:
+        - appspec.yaml
+        - taskdef.json
+    ImageArtifact:
+      files:
+        - imagedefinitions.jso
