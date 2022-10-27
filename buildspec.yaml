@@ -25,7 +25,6 @@ phases:
       - cat imageDetail.json
       - cat taskdef.json
       - cat appspec.yaml
-      - ls -la
       - echo Build completed on `date`
               
 artifacts:
